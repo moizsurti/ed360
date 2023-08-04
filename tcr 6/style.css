@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,400&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* section class */
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+/* nav bar styling */
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    width: 100%;
+    background: #009de2;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.navbar .logo {
+    width: 15%;
+}
+.navbar .logo img {
+    width: 100%;
+}
+
+/* buttons */
+
+.container-buttons {
+    color: white;
+}
+
+.button {
+    color: #fff;
+    background: #2eb7f1;
+    font-size: 13px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    /* box-shadow: 0px 4px 10px 0px #fff; */
+}
+
+.button:hover {
+    background: rgb(69, 173, 221);
+    color: white;
+}
+
+/* banner section */
+
+.banner-img {
+    /* margin-top: 5%; */
+    width: 500px;
+}
+
+.banner-img-1 {
+    width: 500px;
+}
+.banner-row {
+    margin-top: 8rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.banner-row-blue {
+    background: linear-gradient(-45deg, #92dbfa, #2eb7f1);
+}
+
+.banner-row-blue h1,
+.banner-row-blue p {
+    color: white;
+}
+
+.banner-text {
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* working remaining */
+.banner-row h1 {
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 50px;
+    letter-spacing: 3px;
+}
+
+.banner-row h5 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.banner-row p {
+    text-align: center;
+    padding: 2rem 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.banner-row .padding-line {
+    display: inline-block;
+    padding: 1rem 0 0 0;
+}
+
+.banner-row-white h1 {
+    background: #2eb7f1;
+    color: #fff;
+}
+
+.banner-row-white p {
+    color: #73cff7;
+}
+
+.color-yellow {
+    color: rgb(240, 240, 17);
+}
+
+/* offering section */
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* padding: 2em 1em; */
+    text-align: center;
+}
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #1f003b;
+}
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.7em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #92dbfa;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.card img {
+    width: 105%;
+    border-radius: 40%;
+}
+.card h3 {
+    font-weight: 500;
+}
+.card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:hover {
+    background: linear-gradient(-45deg, #92dbfa, #2eb7f1);
+    color: #ffffff;
+}
+.card:hover .img-container {
+    transform: scale(1.15);
+}
+
+/* media qureis */
+
+/* Default styles for all screen sizes */
+/* .container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+} */
+
+/* nav bar styling */
+/* ... (your existing navbar styles) ... */
+
+/* buttons */
+/* ... (your existing button styles) ... */
+
+/* banner section */
+/* ... (your existing banner styles) ... */
+
+/* offering section */
+/* ... (your existing offering section styles) ... */
+
+/* Media queries for responsiveness */
+
+/* For smaller devices (e.g., smartphones) */
+@media only screen and (max-width: 600px) {
+    .navbar .logo {
+        width: 25%;
+    }
+
+    .banner-img {
+        /* display: grid; Adjust the image size for smaller screens */
+        width: 0%;
+    }
+
+    .banner-img-1 {
+        width: 30%;
+    }
+
+    .banner-text {
+        width: 90%; /* Adjust the width of the text container */
+    }
+
+    .banner-row {
+        margin-top: 4rem; /* Adjust the top margin */
+    }
+
+    .banner-row h1 {
+        font-size: 3rem; /* Adjust the font size for smaller screens */
+    }
+
+    .banner-row p {
+        font-size: 1.2rem; /* Adjust the font size for smaller screens */
+        padding: 1rem; /* Adjust the padding for smaller screens */
+    }
+
+    /* Add any other styles specific to smaller screens */
+}
+
+/* For medium-sized devices (e.g., tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1026px) {
+    /* Add styles for medium-sized devices */
+    .navbar .logo {
+        width: 35%;
+    }
+
+    .banner-img {
+        width: 0%;
+    }
+
+    .banner-img-1 {
+        width: 20%;
+    }
+}
+
+/* For larger devices (e.g., laptops and desktops) */
+@media only screen and (min-width: 1025px) {
+    .navbar .logo {
+        width: 12%;
+    }
+
+    .banner-img {
+        width: 500px; /* Reset the image size for larger screens */
+    }
+
+    .banner-text {
+        width: 50rem; /* Reset the width of the text container */
+    }
+
+    .banner-row {
+        margin-top: 8rem; /* Reset the top margin */
+    }
+
+    .banner-row h1 {
+        font-size: 4rem; /* Reset the font size for larger screens */
+    }
+
+    .banner-row p {
+        font-size: 1.4rem; /* Reset the font size for larger screens */
+        padding: 2rem 4rem; /* Reset the padding for larger screens */
+    }
+
+    /* Reset any other styles specific to larger screens */
+}
